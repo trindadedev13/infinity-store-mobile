@@ -21,7 +21,7 @@ jobs:
         node-version: '18'
 
     - name: Install EAS CLI
-      run: npm install -g eas-cli
+      run: npm install -g eas-cli@0.47.0
 
     - name: Authenticate with EAS (Expo)
       run: eas login --non-interactive --username ${{ secrets.EXPO_USERNAME }} --password ${{ secrets.EXPO_PASSWORD }}
